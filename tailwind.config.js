@@ -3,7 +3,7 @@ module.exports = {
   darkMode: "media",
   theme: {
     fontSize: {
-      xx: ".7rem",
+      xx: ".72rem",
       xs: ".75rem",
       sm: ".875rem",
       tiny: ".875rem",
@@ -21,14 +21,15 @@ module.exports = {
       colors: {
         cusblue: "#F8FCFD",
       },
-      animation: ["motion-safe"],
     },
     fontFamily: {
       sans: ["Inter", "sans-serif"],
     },
   },
   variants: {
-    extend: {},
+    extend: {
+      animation: ["motion-safe"],
+    },
   },
   plugins: [require("@tailwindcss/line-clamp")],
 };
