@@ -20,6 +20,9 @@ module.exports = {
     extend: {
       colors: {
         cusblue: "#F8FCFD",
+        darkblue: "#171923",
+        uiblue: "#242736",
+        navblue: "#2F3448",
       },
     },
     fontFamily: {

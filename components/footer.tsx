@@ -5,18 +5,19 @@ function Footer() {
     ["Portofolio", "Contact Me", "Curriculum Vitae"],
   ];
   return (
-    <div className="max-w-3xl px-6 mx-auto border-t border-gray-200 pt-10">
-      <div className="grid grid-cols-3 text-gray-500">
+    <div className="max-w-3xl px-6 mx-auto border-t text-gray-500 border-gray-200 pt-10 dark:text-white">
+      <div className="grid grid-cols-3 ">
         {dataFooter.map((datas, idx) => (
           <div className="pb-10" key={idx}>
             <ul>
               {datas.map((data, idx) => (
-                <li className="my-5" key={idx}>{data}</li>
+                <li className="my-5" key={idx}>
+                  {data}
+                </li>
               ))}
             </ul>
           </div>
         ))}
-        
       </div>
     </div>
   );
