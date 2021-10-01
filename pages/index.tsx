@@ -2,6 +2,7 @@ import type { NextPage } from "next";
 import Footer from "../components/footer";
 import Navbar from "../components/navbar";
 import Head from "next/head";
+import ProjectCard from "../components/projectcard";
 
 const Home: NextPage = () => {
   return (
@@ -9,120 +10,38 @@ const Home: NextPage = () => {
       <Head>
         <title>Mudzik AL Fahri - Web Developer</title>
       </Head>
-      <div className="min-h-screen bg-white">
+      <div className="min-h-screen">
         {/* body */}
         <Navbar />
-        <div className="max-w-3xl mx-auto px-6 pt-40 md:pt-28">
-          <div className="">
-            <h3 className="text-md text-indigo-400 mb-3 font-semibold flex items-center">
-              {" "}
-              HELLO THERE,
-            </h3>
-            <h1 className="text-4xl font-bold mb-4">
-              I{"'"}m Mudzik Al Fahri 👋
-            </h1>
-            <p className="text-gray-500 text-md leading-loose">
-              I{"'"}m from Yogyakarta, Indonesia. I’m a third year computer
-              engineering student at Diponegoro University. I love javascript
-              and react. I{"'"}d like to go in for fullstack web developer
-            </p>
+        <div className="max-w-3xl mx-auto pt-40 md:pt-32">
+          <div className="flex justify-between place-items-center">
+            <div className="mr-12">
+              <div className="w-32 h-32 bg-gradient-to-r from-blue-200 to-indigo-400 rounded-full"></div>
+            </div>
+            <div className="">
+              <h3 className="text-3xl pb-2 border-b border-gray-300 w-max font-bold text-gray-800 mb-3 flex items-center">
+                <span className="mr-1">Hey</span> 👋
+              </h3>
+              <p className="text-gray-800 text-xl leading-loose">
+                My name is Fahri and I{"'"}m from Yogyakarta, Indonesia. I’m a
+                third year computer engineering student at Diponegoro
+                University. I love javascript and react. I{"'"}d like to go in
+                for fullstack web developer
+              </p>
+            </div>
           </div>
 
-          <div className="mt-10 mb-10">
-            <h3 className="text-md mb-3 text-yellow-500 font-semibold flex items-center">
-              {" "}
-              PROJECT
-            </h3>
-            <h1 className="text-4xl font-bold mb-4 leading-tight">
+          <div className="mt-20 mb-10">
+            <h1 className="text-4xl font-bold mb-6 leading-tight pb-2 border-b border-gray-300 w-max">
               A few project
               <br /> that i{"'"}ve been built
             </h1>
             <p className="text-gray-500 text-md leading-loose"></p>
             <div className="">
-              <div className="border border-gray-500 mb-4 rounded-lg py-3 px-4">
-                <h1 className="text-xl font-semibold mb-2">
-                  Wefootwear E-commerce
-                </h1>
-                <p className="text-gray-500">
-                  I make this e-commerce website using Next.js and TailwindCSS
-                  for the frontend, and i{"'"}m also using strapi CMS to manage
-                  the content of the website
-                </p>
-                <div className="flex text-blue-700 mt-2 space-x-2">
-                  <a
-                    href="https://wefootwear.vercel.app/"
-                    className="hover:underline"
-                  >
-                    Demo
-                  </a>
-                  <a
-                    href="https://github.com/mudzikalfahri/wefootwear-ecommerce"
-                    className="hover:underline"
-                  >
-                    Github Repo
-                  </a>
-                </div>
-              </div>
-              <div className="border border-gray-500 mb-4 rounded-lg py-3 px-4">
-                <h1 className="text-xl font-semibold mb-2">Chatting App</h1>
-                <p className="text-gray-500">
-                  This website is built using Reactjs on the frontend and i use
-                  Firebase to store the messages and user data
-                </p>
-                <div className="flex text-blue-700 mt-2 space-x-2">
-                  <a
-                    href="https://whatsapp-clone-ab0df.web.app/"
-                    className="hover:underline"
-                  >
-                    Demo
-                  </a>
-                  <a
-                    href="https://github.com/mudzikalfahri/whatsapp-clone"
-                    className="hover:underline"
-                  >
-                    Github Repo
-                  </a>
-                </div>
-              </div>
-              <div className="border border-gray-500 mb-4 rounded-lg py-3 px-4">
-                <h1 className="text-xl font-semibold mb-2">
-                  Football News Blog
-                </h1>
-                <p className="text-gray-500">
-                  This website is a blog for football news around the world.
-                  This website built using Nextjs and TailwindCSS
-                </p>
-                <div className="flex text-blue-700 mt-2 space-x-2">
-                  <a
-                    href="https://corner-football.vercel.app/"
-                    className="hover:underline"
-                  >
-                    Demo
-                  </a>
-                  <a
-                    href="https://github.com/mudzikalfahri/corner-football"
-                    className="hover:underline"
-                  >
-                    Github Repo
-                  </a>
-                </div>
-              </div>
+              <ProjectCard />
+              <ProjectCard />
+              <ProjectCard />
             </div>
-            {/* <p className="mt-3 underline">View Project</p>{" "}
-          <span>
-            <svg
-              className="w-4 h-4"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fillRule="evenodd"
-                d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                clipRule="evenodd"
-              />
-            </svg>
-          </span> */}
           </div>
         </div>
         <Footer />
