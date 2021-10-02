@@ -7,26 +7,27 @@ import { useState } from "react";
 const Home: NextPage = () => {
   return (
     <Layout>
-      <div className="flex justify-between place-items-center">
-        <div className="text-center">
-          <div className="mb-10">
+      <div className="flex mb-12 justify-between place-items-center">
+        <div className="flex place-items-center justify-between">
+          <div className="w-3/4">
+            <h3 className="text-4xl pb-1 border-b border-gray-300 w-max font-bold mb-3 flex items-center">
+              <span className="mr-1">Hi there 👋, I{"'"}m Fahri</span>
+            </h3>
+            <p className="text-lg leading-loose mx-auto">
+              I{"'"}m from Yogyakarta, Indonesia. I’m a third year computer
+              engineering student at Diponegoro University. I{"'"}d like to go
+              in for fullstack web developer
+            </p>
+          </div>
+          <div className="">
             <div
-              className={`w-24 md:w-full h-24 duration-200 mx-auto bg-gradient-to-r dark:from-blue-200 dark:to-blue-400 from-pink-200 to-purple-400 rounded-full`}
+              className={`w-24 md:w-32 h-32 duration-200 mx-auto bg-gradient-to-r dark:from-blue-200 dark:to-blue-400 from-pink-200 to-purple-400 rounded-full`}
             ></div>
           </div>
-          <h3 className="text-3xl pb-2 mx-auto border-b border-gray-300 w-max font-bold mb-3 flex items-center">
-            <span className="mr-1">Hey</span> 👋
-          </h3>
-          <p className="text-xl leading-loose w-11/12 mx-auto">
-            My name is <span className="font-bold">Fahri</span> and I{"'"}m from
-            Yogyakarta, Indonesia. I’m a third year computer engineering student
-            at Diponegoro University. I love javascript and react. I{"'"}d like
-            to go in for fullstack web developer
-          </p>
         </div>
       </div>
 
-      <div className="my-10 flex place-items-center hover:shadow-lg duration-200 text-purple-500 dark:text-green-200 justify-center md:w-1/2 mx-auto px-5 py-5 bg-white dark:bg-uiblue border border-gray-200 rounded-xl dark:border-gray-700">
+      <div className="flex place-items-center hover:shadow-lg duration-200 text-purple-500 dark:text-green-200 justify-center md:w-1/2 mx-auto px-5 py-5 bg-white dark:bg-uiblue border border-gray-200 rounded-xl dark:border-gray-700">
         <a
           href="https://github.com/mudzikalfahri"
           target="_blank"
