@@ -29,7 +29,7 @@ function Navbar() {
     }
   };
   return (
-    <nav className="fixed bg-white duration-200 dark:bg-navblue dark:text-white shadow-md w-full border-b border-gray-300 md:border-0 z-30">
+    <nav className="fixed bg-white duration-200 dark:bg-navblue dark:text-white shadow-md w-full border-b border-gray-300 dark:border-navblue md:border-0 z-30">
       <div className="max-w-3xl mx-auto place-items-center flex justify-between py-5 font-normal px-6 lg:px-0">
         <div className="w-2/4 md:w-1/4 md:mt-0">
           <ul className="text-md flex justify-between">
