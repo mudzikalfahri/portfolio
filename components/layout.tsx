@@ -6,9 +6,9 @@ const Layout = ({ children }: any): JSX.Element => {
   return (
     <>
       <Head>
-        <title>Mudzik Al Fahri - Web Developer</title>
+        <title>Mudzik Al Fahri - Frontend Developer</title>
       </Head>
-      <div className="min-h-screen bg-cusblue dark:bg-darkblue duration-200">
+      <div className="min-h-screen bg-bg dark:bg-darkblue duration-200">
         {/* body */}
         <Navbar />
         <div className="max-w-3xl mx-auto px-7 md:px-0 pt-28 md:pt-32 text-gray-800 dark:text-white">

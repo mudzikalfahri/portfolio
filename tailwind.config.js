@@ -20,13 +20,15 @@ module.exports = {
     extend: {
       colors: {
         cusblue: "#F8FCFD",
+        bg: "#fafafa",
         darkblue: "#171923",
         uiblue: "#242736",
         navblue: "#2F3448",
       },
     },
     fontFamily: {
-      sans: ["Inter", "sans-serif"],
+      serif: ["Inter", "sans-serif"],
+      sans: ["Outfit", "sans-serif"],
     },
   },
   variants: {

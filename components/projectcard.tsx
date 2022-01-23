@@ -16,12 +16,12 @@ function ProjectCard({ title, stack, desc, color, link }: Props) {
   ];
   return (
     <a href={link} target="_blank" rel="noopener noreferrer">
-      <div className="border flex place-items-center cursor-pointer hover:shadow-lg duration-200 border-gray-200 mb-6 bg-white dark:border-gray-700  dark:bg-uiblue rounded-lg py-3 px-4">
+      <div className="border flex place-items-center cursor-pointer hover:shadow-lg hover:-translate-y-1 duration-200 border-gray-200 mb-5 bg-white dark:border-gray-700  dark:bg-uiblue rounded-lg py-3 px-4">
         <div className="mr-4 place-self-start py-1">
           <div
             className={`w-12 h-12 rounded-xl bg-gradient-to-r p-1 ${
               styledSquare[(color + 3) % 3]
-            } text-white text-xx`}
+            } text-gray-100 text-xx`}
           ></div>
         </div>
         <div className="w-5/6">
