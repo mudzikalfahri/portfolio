@@ -1,10 +1,13 @@
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
 import Image from "next/image";
+import { AiOutlineClose } from "react-icons/ai";
+import { HiMenuAlt3 } from "react-icons/hi";
 
 function Navbar() {
   const { systemTheme, theme, setTheme }: any = useTheme();
   const [isMounted, setIsMounted] = useState(false);
+  const [menu, setMenu] = useState(false);
 
   useEffect(() => setIsMounted(true), []);
 
@@ -16,11 +19,10 @@ function Navbar() {
       return (
         <button onClick={() => setTheme("light")}>
           <Image
-            width={25}
-            height={25}
+            width={20}
+            height={20}
             alt="dark"
             src="https://i.ibb.co/kS9STBF/moon.png"
-            className="w-6 h-6"
           />
         </button>
       );
@@ -28,11 +30,10 @@ function Navbar() {
       return (
         <button onClick={() => setTheme("dark")}>
           <Image
-            width={25}
-            height={25}
+            width={20}
+            height={20}
             alt="light"
             src="https://i.ibb.co/WF5d9W6/brightness.png"
-            className="w-6 h-6"
           />
         </button>
       );
@@ -41,11 +42,23 @@ function Navbar() {
   return (
     <nav className="fixed bg-white/50 duration-200 dark:bg-navblue/70 dark:text-white backdrop-blur-xl w-full border-b border-gray-300 dark:border-navblue md:border-0 z-30">
       <div className="max-w-3xl mx-auto place-items-center flex justify-between py-4 font-normal px-6 lg:px-0">
-        <div className="md:mt-0">
-          <div className="text-md flex items-center space-x-2">
-            <div className="w-8 h-8 mr-4 rounded-full bg-gray-800 flex items-center justify-center">
-              🧑‍💻
-            </div>
+        <div className="w-8 h-8 mr-4 rounded-full bg-gray-800 flex items-center justify-center">
+          🧑‍💻
+        </div>
+        <div
+          className={
+            menu
+              ? "md:mt-0 flex-1 fixed top-0 right-0 z-10 sm:static w-full h-screen bg-white flex items-center justify-center sm:h-auto sm:flex-row sm:bg-transparent sm:inline sm:ml-2"
+              : "md:mt-0 flex-1 fixed top-0 right-0 z-10 sm:static w-full h-screen bg-white hidden items-center justify-center sm:h-auto sm:flex-row sm:bg-transparent sm:inline sm:ml-2"
+          }
+        >
+          <button
+            onClick={() => setMenu(false)}
+            className="p-2 border-none bg-gray-100 sm:hidden absolute top-0 right-0 m-6 rounded-md active:bg-gray-300"
+          >
+            <AiOutlineClose />
+          </button>
+          <div className="text-md flex items-center sm:space-x-2 space-y-4 sm:space-y-0 flex-col md:flex-row">
             <div className="py-1 cursor-pointer px-3 bg-none duration-150 rounded-md hover:bg-gray-200 dark:hover:bg-gray-700">
               Home
             </div>
@@ -60,7 +73,15 @@ function Navbar() {
             </div>
           </div>
         </div>
-        <div className="text-md flex justify-center">{renderTheme()}</div>
+        <div className="text-md flex sm:justify-center flex-1 rounded-md sm:flex-none justify-end mr-6 md:mr-0 items-center">
+          {renderTheme()}
+        </div>
+        <button
+          className="p-2 bg-gray-200 sm:hidden rounded-md border-none text-xl active:bg-gray-300 duration-150"
+          onClick={() => setMenu(true)}
+        >
+          <HiMenuAlt3 />
+        </button>
       </div>
     </nav>
   );
