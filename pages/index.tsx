@@ -7,20 +7,20 @@ const Home: NextPage = () => {
   return (
     <Layout>
       <div className="main relative px-4 md:px-0 max-w-3xl mx-auto flex gap-6">
-        <div className="flex flex-col border-gray-700 relative">
+        <div className="flex flex-col border-gray-700">
           <div className="text-lg font-semibold rounded-md relative py-1 w-max">
             <div className="absolute bottom-2 w-full h-2 bg-yellow-200 dark:bg-yellow-200/20"></div>
             <div className="relative text-2xl">Hello There!</div>
           </div>
-          <div className="flex overflow-hidden font-semibold text-5xl">
-            Hi, I am Fahri
+          <div className="flex overflow-hidden font-bold text-6xl dark:bg-gradient-to-r from-violet-300 via-violet-400 to-violet-500 dark:text-transparent bg-clip-text">
+            {`Hi, I'm Fahri`}
           </div>
           <div className="text-gray-700 font-normal">
             <p className="text-lg mt-2 leading-relaxed dark:text-gray-100">
-              {`Welcome to my gallery!. I am a Frontend Developer based in
+              {`Welcome to my gallery! I am a Frontend Developer based in
               Indonesia. Here I want to show you all the projects I made. I love
               javascript, react, tailwind and the ecosystem. Most of my projects
-              I build using react. I am currently taking a bachelor's degree in
+              I build using react and next. I am currently taking a bachelor's degree in
               computer engineering at Diponegoro University.`}
             </p>
           </div>

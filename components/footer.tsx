@@ -1,25 +1,31 @@
+import { AiFillGithub } from "react-icons/ai";
+import { FaFacebookSquare, FaLinkedin } from "react-icons/fa";
+import { BsTwitter, BsInstagram } from "react-icons/bs";
+
 function Footer() {
-  const dataFooter = [
-    ["Home", "My Blog", "About Me", "Project"],
-    ["Github", "Instagram", "Facebook", "LinkedIn"],
-    ["Portofolio", "Contact Me", "Curriculum Vitae"],
-  ];
   return (
-    <div className="max-w-3xl px-6 mx-auto border-t text-gray-500 border-gray-200 pt-10 dark:text-white">
-      <div className="grid grid-cols-3 ">
-        {dataFooter.map((datas, idx) => (
-          <div className="pb-10" key={idx}>
-            <ul>
-              {datas.map((data, idx) => (
-                <li className="my-5" key={idx}>
-                  {data}
-                </li>
-              ))}
-            </ul>
+    <footer className="bg-bggray px-4 md:px-0">
+      <div className="max-w-3xl mx-auto h-16 flex flex-col-reverse py-2 md:flex-row md:py-0 items-center justify-between">
+        <p className="text-sm text-gray-700">© 2021 Mudzik Al Fahri</p>
+        <div className="flex items-center">
+          <div className="w-10 h-10 ml-2 flex items-center justify-center cursor-pointer duration-150 hover:bg-gray-100 rounded-md">
+            <AiFillGithub className="text-lg " />
           </div>
-        ))}
+          <div className="w-10 h-10 ml-2 hover:text-blue-600 flex items-center justify-center cursor-pointer duration-150 hover:bg-gray-100 rounded-md">
+            <FaFacebookSquare className="text-lg " />
+          </div>
+          <div className="w-10 h-10 ml-2 hover:text-red-500 flex items-center justify-center cursor-pointer duration-150 hover:bg-gray-100 rounded-md">
+            <BsInstagram className="text-lg " />
+          </div>
+          <div className="w-10 h-10 ml-2 flex hover:text-blue-500 items-center justify-center cursor-pointer duration-150 hover:bg-gray-100 rounded-md">
+            <FaLinkedin className="text-lg " />
+          </div>
+          <div className="w-10 h-10 ml-2 hover:text-blue-500 flex items-center justify-center cursor-pointer duration-150 hover:bg-gray-100 rounded-md">
+            <BsTwitter className="text-lg " />
+          </div>
+        </div>
       </div>
-    </div>
+    </footer>
   );
 }
 
