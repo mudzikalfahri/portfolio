@@ -19,7 +19,7 @@ function ProjectCard({ title, stack, desc, color, link }: Props) {
       <div className="border flex place-items-center cursor-pointer hover:shadow-lg hover:-translate-y-1 duration-200 border-gray-200 mb-5 bg-white dark:border-gray-700  dark:bg-uiblue rounded-lg py-3 px-4">
         <div className="mr-4 place-self-start py-1">
           <div
-            className={`w-12 h-12 rounded-xl bg-gradient-to-r p-1 ${
+            className={`sm:w-12 sm:h-12 w-8 h-8 rounded-xl bg-gradient-to-r p-1 ${
               styledSquare[(color + 3) % 3]
             } text-gray-100 text-xx`}
           ></div>
@@ -29,11 +29,11 @@ function ProjectCard({ title, stack, desc, color, link }: Props) {
             <h1 className="text-md font-semibold text-blue-700 dark:text-blue-400 mb-1 md:mb-0 mr-2">
               {title}
             </h1>
-            <div className="flex place-items-center">
+            <div className="flex items-center flex-wrap gap-y-2 gap-x-1">
               {stack.map((item: any, idx: number) => (
                 <div
                   key={idx}
-                  className="px-2 mr-1.5 py-0.5 rounded-md bg-blue-200 dark:bg-opacity-10 dark:text-blue-300 bg-opacity-40 text-xx"
+                  className="px-2 py-0.5 rounded-md bg-blue-200 dark:bg-opacity-10 dark:text-blue-300 bg-opacity-40 text-xx"
                 >
                   {item}
                 </div>
