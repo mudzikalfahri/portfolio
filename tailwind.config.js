@@ -27,7 +27,6 @@ module.exports = {
       },
     },
     fontFamily: {
-      serif: ["Inter", "sans-serif"],
       sans: ["Ubuntu", "sans-serif"],
     },
   },
