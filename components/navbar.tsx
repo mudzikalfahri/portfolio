@@ -1,6 +1,7 @@
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { AiOutlineClose } from "react-icons/ai";
 import { HiMenuAlt3 } from "react-icons/hi";
 
@@ -65,12 +66,17 @@ function Navbar() {
             <AiOutlineClose />
           </button>
           <div className="text-md flex items-center sm:space-x-2 space-y-4 sm:space-y-0 flex-col sm:flex-row">
-            <div className="py-1 cursor-pointer px-3 bg-none duration-150 rounded-md hover:bg-gray-200 dark:hover:bg-gray-700">
-              Home
-            </div>
-            <div className="py-1 cursor-pointer px-3 bg-none duration-150 rounded-md hover:bg-gray-200 dark:hover:bg-gray-700">
-              About
-            </div>
+            <Link href="/" passHref>
+              <div className="py-1 cursor-pointer px-3 bg-none duration-150 rounded-md hover:bg-gray-200 dark:hover:bg-gray-700">
+                Home
+              </div>
+            </Link>
+            <Link href="/about" passHref>
+              <div className="py-1 cursor-pointer px-3 bg-none duration-150 rounded-md hover:bg-gray-200 dark:hover:bg-gray-700">
+                About
+              </div>
+            </Link>
+
             <div className="py-1 cursor-pointer px-3 bg-none duration-150 rounded-md hover:bg-gray-200 dark:hover:bg-gray-700">
               Project
             </div>
