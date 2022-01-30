@@ -22,7 +22,7 @@ const Home: NextPage = () => {
               delay: 0.3,
               type: "spring",
             }}
-            className="flex overflow-hidden font-bold text-5xl sm:text-6xl dark:bg-gradient-to-r from-green-300 via-green-400 to-green-500 dark:text-transparent bg-clip-text"
+            className="flex overflow-hidden font-bold text-5xl sm:text-6xl dark:bg-gradient-to-r from-blue-300 via-indigo-400 to-purple-500 dark:text-transparent bg-clip-text"
           >
             {`Hi, I'm Fahri`}
           </motion.div>

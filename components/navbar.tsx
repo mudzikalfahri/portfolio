@@ -47,7 +47,7 @@ function Navbar() {
     }
   };
   return (
-    <nav className="fixed bg-white/50 duration-200 dark:bg-navblue/70 dark:text-white backdrop-blur-xl w-full border-b border-gray-300 dark:border-navblue md:border-0 z-30">
+    <nav className="fixed bg-white/50 duration-200 dark:bg-darkblue/70 dark:text-white backdrop-blur-xl w-full border-b border-gray-300 dark:border-navblue md:border-0 z-30">
       <div className="max-w-3xl mx-auto items-center flex justify-between py-4 font-normal px-4 md:px-0">
         <div className="w-8 h-8 mr-4 rounded-full bg-gray-800 flex items-center justify-center">
           🧑‍💻
@@ -73,7 +73,7 @@ function Navbar() {
             </Link>
             <Link href="/about" passHref>
               <div className="py-1 cursor-pointer px-3 bg-none duration-150 rounded-md hover:bg-gray-200 dark:hover:bg-gray-700">
-                About
+                Dashboard
               </div>
             </Link>
 
