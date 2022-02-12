@@ -2,7 +2,7 @@ export const data = [
   {
     title: "Wefootwear",
     stack: ["react", "nextjs", "tailwind", "strapi"],
-    desc: "This is an example of E-Commerce website built using nextjs, it has complete features like real ecommerce from seelcting product to processing payment.",
+    desc: "This is an example of E-Commerce website built using nextjs, it has complete features like real ecommerce from selecting product to processing payment.",
     link: "https://github.com/mudzikalfahri/wefootwear-ecommerce",
   },
   {
@@ -14,7 +14,7 @@ export const data = [
   {
     title: "Wecoding",
     stack: ["nextjs", "typescript", "tailwind", "express", "mongodb"],
-    desc: "Fullstack coding forum website built with nextjs and express, users can post and answer a question",
+    desc: "Fullstack coding forum website built with nextjs, tailwind, express, and authentication using jwt",
     link: "https://github.com/mudzikalfahri/wecoding",
   },
 ];
