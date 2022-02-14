@@ -60,9 +60,8 @@ const Home: NextPage = () => {
             <p className="sm:text-lg mt-2 leading-relaxed dark:text-gray-100">
               {`Welcome to my gallery! I am a Frontend Developer based in
               Indonesia. Here I want to show you all the projects I made. I love
-              javascript, react, tailwind and the ecosystem. Most of my projects
-              I build using react and next. I am currently taking a bachelor's degree in
-              computer engineering at Diponegoro University.`}
+              javascript and react. Most of my projects i build using react and next. 
+              I am currently taking a bachelor's degree in computer engineering at Diponegoro University.`}
             </p>
           </motion.div>
           <Button name="See my Works" />
