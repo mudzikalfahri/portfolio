@@ -1,9 +1,9 @@
 import type { NextPage } from "next";
-import ProjectCard from "@components/projectcard";
-import Layout from "@components/layout";
+import ProjectCard from "@components/ProjectCard";
+import Layout from "@components/Layout";
 import { data } from "@utils/data";
 import { motion } from "framer-motion";
-import Button from "@components/button";
+import Button from "@components/Button";
 
 const Home: NextPage = () => {
   return (
