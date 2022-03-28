@@ -1,16 +1,22 @@
 import type { NextPage } from "next";
 import ProjectCard from "@components/ProjectCard";
-import Layout from "@components/Layout";
+import Layout from "layouts/Layout";
 import { data } from "@utils/data";
 import { motion } from "framer-motion";
-
 import Intro from "@components/Intro";
+import { Meta } from "layouts/Meta";
 
 const Home: NextPage = () => {
   return (
-    <Layout>
+    <Layout
+      meta={
+        <Meta
+          title="Mudzik Al Fahri - Frontend Developer"
+          description="Welcome to my personal page"
+        />
+      }
+    >
       <Intro />
-
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
