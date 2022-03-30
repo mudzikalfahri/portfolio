@@ -8,7 +8,7 @@ function Intro() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
-      className="main relative max-w-3xl mx-auto flex gap-6 "
+      className="main relative max-w-3xl pt-28 mx-auto flex gap-6 "
     >
       <div className="flex flex-col border-gray-700">
         <motion.div
@@ -60,7 +60,6 @@ function Intro() {
               I am currently taking a bachelor's degree in computer engineering at Diponegoro University.`}
           </p>
         </motion.div>
-        <Button name="See my Works" />
       </div>
     </motion.div>
   );
