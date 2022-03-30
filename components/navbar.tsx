@@ -5,6 +5,7 @@ import { AiOutlineClose } from "react-icons/ai";
 import { HiMenuAlt3 } from "react-icons/hi";
 import { motion } from "framer-motion";
 
+//
 function Navbar() {
   const { systemTheme, theme, setTheme }: any = useTheme();
   const [menu, setMenu] = useState(false);

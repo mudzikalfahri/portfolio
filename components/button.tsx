@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 
+//
 const Button = ({ name }: { name: string }) => (
   <motion.div
     initial={{ opacity: 0, y: 50 }}

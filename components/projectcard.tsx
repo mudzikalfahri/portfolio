@@ -8,6 +8,8 @@ interface Props {
   link: string;
 }
 
+//
+
 function ProjectCard({ title, stack, desc, color, link }: Props) {
   const styledSquare = [
     "from-blue-200 to-indigo-400",

@@ -2,6 +2,7 @@ import { AiFillGithub } from "react-icons/ai";
 import { FaFacebookSquare, FaLinkedin } from "react-icons/fa";
 import { BsTwitter, BsInstagram } from "react-icons/bs";
 
+//
 function Footer() {
   return (
     <footer className="bg-bggray px-4 md:px-0">
