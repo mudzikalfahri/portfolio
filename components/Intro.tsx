@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import Button from "@components/Button";
+import Button from "./Button";
 
 function Intro() {
   return (
@@ -8,7 +8,7 @@ function Intro() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
-      className="main relative max-w-3xl mx-auto flex gap-6 pt-32"
+      className="main relative max-w-3xl mx-auto flex gap-6 "
     >
       <div className="flex flex-col border-gray-700">
         <motion.div

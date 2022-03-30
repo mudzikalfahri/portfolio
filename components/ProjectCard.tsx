@@ -1,4 +1,5 @@
 import React from "react";
+import { BsBoxArrowUpRight } from "react-icons/bs";
 
 interface Props {
   title: string;
@@ -18,7 +19,10 @@ function ProjectCard({ title, stack, desc, color, link }: Props) {
   ];
   return (
     <a href={link} target="_blank" rel="noopener noreferrer">
-      <div className="border flex place-items-center cursor-pointer hover:shadow-lg hover:-translate-y-1 duration-200 border-gray-200 mb-5 bg-white dark:border-gray-700  dark:bg-uiblue rounded-lg py-3 px-4">
+      <div className="border flex hover:border-gray-700 place-items-center cursor-pointer hover:shadow-lg hover:-translate-y-1 duration-200 border-gray-200 mb-5 bg-white dark:border-gray-700 group dark:bg-uiblue rounded-lg py-3 px-4 relative">
+        <div className="w-10 group-hover:flex hidden duration-150 h-10 items-center justify-center absolute -top-3 -right-3 rounded-full bg-gray-700 text-white">
+          <BsBoxArrowUpRight />
+        </div>
         <div className="mr-4 place-self-start py-1">
           <div
             className={`sm:w-12 sm:h-12 w-8 h-8 rounded-xl bg-gradient-to-r p-1 ${
