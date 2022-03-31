@@ -14,14 +14,15 @@ function Navbar() {
   return (
     <nav className="fixed top-0 left-0 bg-white/50 duration-200 dark:bg-darkblue/70 dark:text-white backdrop-blur-xl w-full border-b border-gray-300 dark:border-navblue md:border-0 z-30">
       <div className="max-w-3xl mx-auto items-center flex justify-between py-4 font-normal px-4 md:px-0">
-        <div className="w-8 h-8 mr-4 rounded-full bg-gray-800 flex items-center justify-center">
-          🧑‍💻
-        </div>
+        {/* <img
+          src="/profilepic.jpeg"
+          className="w-8 h-8 mr-4 object-cover rounded-full bg-gray-800 flex items-center justify-center"
+        /> */}
         <div
           className={
             menu
-              ? "md:mt-0 flex-1 fixed top-0 right-0 z-10 sm:static w-full h-screen bg-white dark:bg-darkblue dark:sm:bg-transparent flex items-center justify-center sm:h-auto sm:flex-row sm:bg-transparent sm:inline sm:ml-2"
-              : "md:mt-0 flex-1 fixed top-0 right-0 z-10 sm:static w-full h-screen bg-white dark:bg-darkblue dark:sm:bg-transparent hidden items-center justify-center sm:h-auto sm:flex-row sm:bg-transparent sm:inline sm:ml-2"
+              ? "md:mt-0 flex-1 fixed top-0 right-0 z-10 sm:static w-full h-screen bg-white dark:bg-darkblue dark:sm:bg-transparent flex items-center justify-center sm:h-auto sm:flex-row sm:bg-transparent sm:inline "
+              : "md:mt-0 flex-1 fixed top-0 right-0 z-10 sm:static w-full h-screen bg-white dark:bg-darkblue dark:sm:bg-transparent hidden items-center justify-center sm:h-auto sm:flex-row sm:bg-transparent sm:inline "
           }
         >
           <button
