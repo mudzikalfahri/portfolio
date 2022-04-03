@@ -16,7 +16,7 @@ const Layout = ({
         {/* body */}
 
         <Navbar />
-        <div className="max-w-3xl mx-auto px-4 md:px-2 text-gray-800 dark:text-white">
+        <div className="max-w-3xl mx-auto px-2 text-gray-800 dark:text-white">
           {children}
         </div>
         <Footer />
