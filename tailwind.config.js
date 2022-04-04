@@ -27,7 +27,7 @@ module.exports = {
       },
     },
     fontFamily: {
-      sans: ["Quicksand", "sans-serif"],
+      // sans: ["Quicksand", "sans-serif"],
     },
   },
   variants: {
