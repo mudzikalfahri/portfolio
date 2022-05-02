@@ -31,9 +31,9 @@ const Home: NextPage = () => {
             delay: 0.6,
             type: "spring",
           }}
-          className="text-lg font-semibold rounded-md relative py-1 w-max mb-5"
+          className="text-lg font-bold rounded-md relative py-1 w-max mb-5"
         >
-          <div className="absolute bottom-2 w-full h-2 bg-blue-200 rounded-sm dark:bg-transparent"></div>
+          {/* <div className="absolute bottom-2 w-full h-2 bg-blue-200 rounded-sm dark:bg-transparent"></div> */}
           <div className="relative text-2xl">Projects</div>
         </motion.div>
         <p className="text-gray-500 text-md leading-loose"></p>

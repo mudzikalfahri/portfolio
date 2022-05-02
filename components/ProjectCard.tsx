@@ -46,7 +46,7 @@ function ProjectCard({ title, stack, desc, color, link }: Props) {
               ))}
             </div>
           </div>
-          <p className="text-gray-500 dark:text-white text-xx md:text-sm mb-1 line-clamp-2">
+          <p className="text-gray-500 dark:text-white text-xs md:text-xs mb-1 line-clamp-2">
             {desc}
           </p>
         </div>
