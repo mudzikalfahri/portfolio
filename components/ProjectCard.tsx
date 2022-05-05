@@ -1,7 +1,7 @@
 import React from "react";
 import { BsBoxArrowUpRight } from "react-icons/bs";
 
-interface Props {
+interface IProjectCard {
   title: string;
   stack: any;
   desc: string;
@@ -11,7 +11,7 @@ interface Props {
 
 //
 
-function ProjectCard({ title, stack, desc, color, link }: Props) {
+function ProjectCard({ title, stack, desc, color, link }: IProjectCard) {
   const styledSquare = [
     "from-blue-200 to-indigo-400",
     "from-green-200 to-green-400",

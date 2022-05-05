@@ -12,7 +12,7 @@ function Navbar() {
   const currentTheme = theme === "system" ? systemTheme : theme;
 
   return (
-    <nav className="fixed top-0 left-0 bg-white/50 duration-200 dark:bg-darkblue/70 dark:text-white backdrop-blur-xl w-full border-b border-gray-300 dark:border-navblue md:border-0 z-30">
+    <nav className="fixed top-0 left-0  duration-200  dark:text-white backdrop-blur-xl w-full border-b border-gray-300 dark:border-navblue md:border-0 z-30">
       <div className="max-w-3xl mx-auto text-sm items-center flex justify-between py-4 font-normal px-4 md:px-0">
         {/* <img
           src="/profilepic.jpeg"
@@ -38,15 +38,15 @@ function Navbar() {
               </div>
             </Link>
             <Link href="/about" passHref>
-              <div className="py-1 cursor-pointer px-3 bg-none duration-150 text-gray-500 rounded-md hover:bg-gray-200 dark:hover:bg-gray-700">
+              <div className="py-1 cursor-pointer px-3 bg-none duration-150 text-gray-500 rounded-md hover:bg-gray-200 dark:hover:bg-gray-700 dark:hover:text-white">
                 Dashboard
               </div>
             </Link>
 
-            <div className="py-1 cursor-pointer px-3 bg-none duration-150 text-gray-500 rounded-md hover:bg-gray-200 dark:hover:bg-gray-700">
+            <div className="py-1 cursor-pointer px-3 bg-none duration-150 text-gray-500 rounded-md hover:bg-gray-200 dark:hover:bg-gray-700 dark:hover:text-white">
               Project
             </div>
-            <div className="py-1 cursor-pointer px-3 bg-none duration-150 text-gray-500 rounded-md hover:bg-gray-200 dark:hover:bg-gray-700">
+            <div className="py-1 cursor-pointer px-3 bg-none duration-150 text-gray-500 rounded-md hover:bg-gray-200 dark:hover:bg-gray-700 dark:hover:text-white">
               Link
             </div>
           </div>
