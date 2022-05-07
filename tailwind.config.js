@@ -25,6 +25,9 @@ module.exports = {
         uiblue: "#242736",
         navblue: "#2F3448",
       },
+      animation: {
+        "pulse-slow": "pulse 8s linear infinite",
+      },
     },
     fontFamily: {
       sans: ["Noto Sans", "sans-serif"],

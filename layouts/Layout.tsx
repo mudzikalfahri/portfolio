@@ -12,11 +12,14 @@ const Layout = ({
   return (
     <>
       {meta}
-      <div className="min-h-screen bg-bg dark:bg-darkblue duration-200">
+      <div className="min-h-screen bg-bg dark:bg-darkblue duration-200 overflow-hidden">
         {/* body */}
 
         <Navbar />
-        <div className="max-w-3xl mx-auto px-2 text-gray-800 dark:text-white">
+        <div className="max-w-3xl mx-auto px-4 text-gray-800 dark:text-white">
+          <div className="w-full h-52 absolute bg-gradient-to-b hidden dark:inline from-transparent to-white dark:to-darkblue top-0 blur-2xl left-0 animate-pulse-slow">
+            <div className="bg-gradient-to-r dark:opacity-20 opacity-20 from-blue-400 via-indigo-500 to-purple-600 w-full md:w-4/5 h-32 mx-auto"></div>
+          </div>
           {children}
         </div>
         <Footer />

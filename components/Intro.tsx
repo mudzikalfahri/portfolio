@@ -56,7 +56,7 @@ function Intro() {
           }}
           className="text-gray-700 font-normal"
         >
-          <p className=" mt-2 leading-relaxed dark:text-gray-100 w-4/5">
+          <p className=" mt-2 leading-relaxed dark:text-gray-100 md:w-4/5">
             {`Welcome to my gallery! I am a Frontend Developer based in
               Indonesia. Here I want to show you all the projects I made. I love
               javascript and react. `}

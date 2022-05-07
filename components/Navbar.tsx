@@ -13,7 +13,7 @@ function Navbar() {
 
   return (
     <nav className="fixed top-0 left-0  duration-200  dark:text-white backdrop-blur-xl w-full border-b border-gray-300 dark:border-navblue md:border-0 z-30">
-      <div className="max-w-3xl mx-auto text-sm items-center flex justify-between py-4 font-normal px-4 md:px-0">
+      <div className="max-w-3xl mx-auto text-sm items-center flex justify-between py-4 font-normal px-4 md:px-2">
         {/* <img
           src="/profilepic.jpeg"
           className="w-8 h-8 mr-4 object-cover rounded-full bg-gray-800 flex items-center justify-center"
@@ -51,11 +51,11 @@ function Navbar() {
             </div>
           </div>
         </div>
-        <div className="flex-1 sm:flex-none flex justify-end">
+        <div className="flex-1 sm:flex-none flex justify-start md:justify-end">
           {currentTheme === "dark" ? (
             <button
               onClick={() => setTheme("light")}
-              className="text-md w-9 bg-gray-700 overflow-hidden h-9 flex items-center rounded-md sm:justify-center"
+              className="text-md w-9 bg-gray-700 overflow-hidden h-9 flex items-center rounded-md justify-center"
             >
               <motion.span initial={{ y: -20 }} animate={{ y: 0 }}>
                 <svg
@@ -77,7 +77,7 @@ function Navbar() {
           ) : (
             <button
               onClick={() => setTheme("dark")}
-              className="text-md w-9 text-gray-700 overflow-hidden bg-gray-200 h-9 flex items-center rounded-md sm:justify-center"
+              className="text-md w-9 text-gray-700 overflow-hidden bg-gray-200 h-9 flex items-center rounded-md justify-center"
             >
               <motion.svg
                 initial={{ y: -20 }}
