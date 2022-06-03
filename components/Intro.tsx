@@ -43,7 +43,7 @@ function Intro() {
             Developer
           </div>
           <div className="px-3 py-1 rounded-md bg-purple-200 dark:bg-opacity-10 dark:text-purple-300 bg-opacity-40 text-xs">
-            Sleeper
+            Adventurer
           </div>
         </motion.div>
         <motion.div
