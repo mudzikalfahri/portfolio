@@ -12,7 +12,7 @@ const Home: NextPage = () => {
       meta={
         <Meta
           title="Mudzik Al Fahri - Frontend Developer"
-          description="Welcome to my personal page"
+          description="Welcome to my personal portfolio"
         />
       }
     >
@@ -40,11 +40,11 @@ const Home: NextPage = () => {
         <div className="mb-5">
           {data.map(({ ...prop }, idx) => (
             <motion.div
-              initial={{ opacity: 0, y: 50 }}
+              initial={{ opacity: 0, y: -50 * (idx + 1) }}
               animate={{ opacity: 1, y: 0 }}
               transition={{
                 duration: 0.5,
-                delay: 0.7 + 0.2 * idx,
+                delay: 0.3 * (idx + 1),
                 type: "spring",
                 stiffness: 70,
               }}
